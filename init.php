@@ -1,12 +1,19 @@
 <?php
 \Larakit\StaticFiles\Manager::package('larakit/sf-angular-larakit')
-    ->usePackage('larakit/sf-angular')
+    ->usePackage('larakit/sf-angular-route')
+    ->usePackage('larakit/sf-angular-named-route')
+    ->usePackage('larakit/sf-angular-resource')
+    ->usePackage('larakit/sf-angular-sanitize')
+    ->usePackage('larakit/sf-angular-ui-bootstrap')
+    ->usePackage('larakit/sf-angular-ui-tree')
     ->usePackage('larakit/sf-bootstrap')
     ->setSourceDir('public')
-    ->ngModule('lk.form')
-    //module
-    ->jsPackage('lk.form.js')
-    //components
-    ->jsPackage('lk.form/components/formfield-textarea.js')
-    ->jsPackage('lk.form/components/formfield-text.js')
-    ->jsPackage('lk.form/components/formfield-select.js');
+    //larakit.form
+    ->ngModule('larakit.form')
+    ->jsPackage('larakit.form.js')
+    ->jsPackage('larakit.form/components/formfield-textarea.js')
+    ->jsPackage('larakit.form/components/formfield-text.js')
+    ->jsPackage('larakit.form/components/formfield-select.js')
+    //larakit
+    ->js('/!/angular-larakit.js')
+;

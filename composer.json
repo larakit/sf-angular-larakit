@@ -4,7 +4,12 @@
     "version": "1.5.9",
     "license": "MIT",
     "require":{
-        "larakit/sf-angular":"*"
+        "larakit/sf-angular-route":"*",
+        "larakit/sf-angular-resource":"*",
+        "larakit/sf-angular-sanitize":"*",
+        "larakit/sf-angular-ui-bootstrap":"*",
+        "larakit/sf-angular-ui-tree":"*",
+        "larakit/sf-angular-named-route":"*"
     },
     "autoload": {
         "files": [

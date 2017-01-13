@@ -1,7 +1,7 @@
 angular
     .module('lk.form')
     .component('formfieldSelect', {
-        templateUrl: '/packages/larakit/sf-angular-larakit/lk.form/components/formfield-select.html',
+        templateUrl: '/packages/larakit/sf-angular-larakit/larakit.form/components/formfield-select.html',
         transclude: true,
 
         bindings: {
