@@ -1,0 +1,12 @@
+<?php
+\Larakit\StaticFiles\Manager::package('larakit/sf-angular-larakit')
+    ->usePackage('larakit/sf-angular')
+    ->usePackage('larakit/sf-bootstrap')
+    ->setSourceDir('public')
+    ->ngModule('lk.form')
+    //module
+    ->jsPackage('lk.form.js')
+    //components
+    ->jsPackage('lk.form/components/formfield-textarea.js')
+    ->jsPackage('lk.form/components/formfield-text.js')
+    ->jsPackage('lk.form/components/formfield-select.js');

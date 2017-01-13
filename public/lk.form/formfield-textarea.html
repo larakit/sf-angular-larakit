@@ -1,0 +1,5 @@
+<div class="form-group" ng-class="{'has-error': $ctrl.error}">
+    <label class="control-label" ng-transclude></label>
+    <textarea type="text" class="form-control" ng-model="$ctrl.model" ng-disabled="0==$ctrl.isEdit"></textarea>
+    <span class="help-block" ng-bind="$ctrl.error" ng-show="$ctrl.error"></span>
+</div>
