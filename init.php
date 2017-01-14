@@ -7,13 +7,19 @@
     ->usePackage('larakit/sf-angular-ui-bootstrap')
     ->usePackage('larakit/sf-angular-ui-tree')
     ->usePackage('larakit/sf-bootstrap')
+    ->usePackage('larakit/sf-toastrjs')
     ->setSourceDir('public')
     //larakit.form
     ->ngModule('larakit.form')
     ->jsPackage('larakit.form.js')
-    ->jsPackage('larakit.form/components/formfield-textarea.js')
-    ->jsPackage('larakit.form/components/formfield-text.js')
-    ->jsPackage('larakit.form/components/formfield-select.js')
+    ->jsPackage('larakit.form/formfield-textarea.js')
+    ->jsPackage('larakit.form/formfield-text.js')
+    ->jsPackage('larakit.form/formfield-select.js')
+    //larakit.entity
+    ->ngModule('larakit.entity')
+    ->jsPackage('larakit.entity.js')
+    ->jsPackage('larakit.entity/entity-form.js')
+    ->jsPackage('larakit.entity/entity-list.js')
     //larakit
     ->js('/!/angular-larakit.js')
 ;

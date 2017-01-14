@@ -1,7 +1,7 @@
 angular
-    .module('lk.form')
+    .module('larakit.form')
     .component('formfieldText', {
-        templateUrl: '/packages/larakit/sf-angular-larakit/larakit.form/components/formfield-text.html',
+        templateUrl: '/packages/larakit/sf-angular-larakit/larakit.form/formfield-text.html',
         transclude: true,
         bindings: {
             error: '=',

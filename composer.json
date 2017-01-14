@@ -5,6 +5,7 @@
     "license": "MIT",
     "require":{
         "larakit/sf-angular-route":"*",
+        "larakit/sf-toastrjs":"*",
         "larakit/sf-angular-resource":"*",
         "larakit/sf-angular-sanitize":"*",
         "larakit/sf-angular-ui-bootstrap":"*",

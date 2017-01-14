@@ -2,7 +2,7 @@
     <label class="control-label" ng-transclude></label>
     <ui-select ng-model="$ctrl.select_model" on-select="$ctrl.selected()">
         <ui-select-match>
-            <span ng-bind="$select.selected[$ctrl.optionKey]"></span>
+            <span ng-bind="$ctrl.getLabel()"></span>
         </ui-select-match>
         <ui-select-choices group-by="$ctrl.groupField" repeat="item in ($ctrl.options | filter: $select.search) track by item.id">
             <span ng-bind="item[$ctrl.optionKey]"></span>

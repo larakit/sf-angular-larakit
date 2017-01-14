@@ -1,1 +1,1 @@
-angular.module('lk.form', []);
+angular.module('larakit.form', []);
