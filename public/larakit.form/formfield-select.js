@@ -6,6 +6,7 @@ angular
 
         bindings: {
             error: '=',
+            desc: '=',
             label: '=',
             options: '=',
             groupField: '=',

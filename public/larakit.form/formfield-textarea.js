@@ -5,6 +5,7 @@ angular
         transclude: true,
         bindings: {
             error: '=',
+            desc: '=',
             label: '=',
             model: '='
         }

@@ -14,6 +14,7 @@
     ->jsPackage('larakit.form.js')
     ->jsPackage('larakit.form/formfield-textarea.js')
     ->jsPackage('larakit.form/formfield-text.js')
+    ->jsPackage('larakit.form/formfield-time.js')
     ->jsPackage('larakit.form/formfield-select.js')
     //larakit.entity
     ->ngModule('larakit.entity')

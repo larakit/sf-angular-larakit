@@ -1,7 +1,7 @@
 angular
     .module('larakit.form')
-    .component('formfieldText', {
-        templateUrl: '/packages/larakit/sf-angular-larakit/larakit.form/formfield-text.html',
+    .component('formfieldTime', {
+        templateUrl: '/packages/larakit/sf-angular-larakit/larakit.form/formfield-time.html',
         transclude: true,
         bindings: {
             error: '=',

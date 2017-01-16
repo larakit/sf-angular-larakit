@@ -1,6 +1,7 @@
 <div class="form-group" ng-class="{'has-error': $ctrl.error}">
     <label class="control-label" ng-transclude></label>
-    <input type="text" class="form-control" ng-model="$ctrl.model">
+    {{$ctrl.model}}
+    <input type="time" class="form-control" ng-model="$ctrl.model">
     <span class="help-block" ng-bind="$ctrl.error" ng-show="$ctrl.error"></span>
     <span class="help-block" ng-bind="$ctrl.desc" ng-show="$ctrl.desc"></span>
 </div>
