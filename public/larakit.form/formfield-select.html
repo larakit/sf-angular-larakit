@@ -8,5 +8,38 @@
             <span ng-bind="item[$ctrl.optionKey]"></span>
         </ui-select-choices>
     </ui-select>
+    <span class="help-block" ng-bind="$ctrl.error" ng-show="$ctrl.error"></span>
     <span class="help-block" ng-bind="$ctrl.desc" ng-show="$ctrl.desc"></span>
 </div>
+[
+    {
+        name:'Офис 1',
+        country:'США',
+        city:'Нью-Йорк',
+    },
+    {
+        name:'Офис 2',
+        country:'Россия',
+        city:'Курган',
+    },
+    {
+        name:'Офис 4',
+        country:'Россия',
+        city:'Курган',
+    },
+    {
+        name:'Офис 3',
+        country:'Россия',
+        city:'Москва',
+    }
+]
+
+США
+    Нью-Йорк
+        Офис 1
+Россия
+    Курган
+        Офис 2
+        Офис 4
+    Москва
+        Офис 3

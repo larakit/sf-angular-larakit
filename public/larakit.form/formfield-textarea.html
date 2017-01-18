@@ -1,6 +1,12 @@
 <div class="form-group" ng-class="{'has-error': $ctrl.error}">
     <label class="control-label" ng-transclude></label>
-    <textarea type="text" class="form-control" ng-model="$ctrl.model"></textarea>
+    <textarea type="text"
+              ng-attr-rows="{{$ctrl.rows || '3'}}"
+              class="form-control" ng-model="$ctrl.model"></textarea>
     <span class="help-block" ng-bind="$ctrl.error" ng-show="$ctrl.error"></span>
     <span class="help-block" ng-bind="$ctrl.desc" ng-show="$ctrl.desc"></span>
+    <p class="example-block" rel="name-0" ng-show="$ctrl.preparedExamples.length>0">
+        Например:
+        <span ng-repeat="example in $ctrl.preparedExamples" ng-click="$ctrl.model = example.value" ng-bind="example.title"></span>
+    </p>
 </div>

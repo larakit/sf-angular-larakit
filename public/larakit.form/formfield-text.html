@@ -1,6 +1,11 @@
 <div class="form-group" ng-class="{'has-error': $ctrl.error}">
     <label class="control-label" ng-transclude></label>
     <input type="text" class="form-control" ng-model="$ctrl.model">
+    <span class="help-block" ng-bind="$ctrl.example" ng-click="$ctrl.applyExample()" ng-id="$ctrl.example"></span>
     <span class="help-block" ng-bind="$ctrl.error" ng-show="$ctrl.error"></span>
     <span class="help-block" ng-bind="$ctrl.desc" ng-show="$ctrl.desc"></span>
+    <p class="example-block" rel="name-0" ng-show="$ctrl.preparedExamples.length>0">
+        Например:
+        <span ng-repeat="example in $ctrl.preparedExamples" ng-click="$ctrl.model = example.value" ng-bind="example.title"></span>
+    </p>
 </div>
