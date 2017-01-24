@@ -16,7 +16,6 @@ angular
             var self = this;
             self.preparedExamples = [];
             if(undefined != self.examples) {
-                console.log(self.preparedExamples);
                 var title, value;
                 _.each(self.examples, function (v, k) {
                     value = v[0];
