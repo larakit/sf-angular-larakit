@@ -14,8 +14,6 @@ angular
         controller: function () {
             var self = this;
             self.opened = false;
-            console.log(self.max);
-            console.log(self.min);
             self.dateOptions = {
                 formatYear: 'yy',
                 maxDate: (undefined!==self.max)?new Date(self.max):null,
