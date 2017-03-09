@@ -24,5 +24,5 @@
     ->jsPackage('larakit.entity/entity-form.js')
     ->jsPackage('larakit.entity/entity-list.js')
     //larakit
-    ->js('/!/angular-larakit.js')
+    
 ;
