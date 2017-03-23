@@ -17,12 +17,12 @@
     ->jsPackage('larakit.form/formfield-radio.js')
     ->jsPackage('larakit.form/formfield-select.js')
     ->jsPackage('larakit.form/formfield-date.js')
+    ->jsPackage('larakit.form/formfield-icons.js')
     ->cssPackage('larakit.form/example.css')
     //larakit.entity
     ->ngModule('larakit.entity')
     ->jsPackage('larakit.entity.js')
     ->jsPackage('larakit.entity/entity-form.js')
     ->jsPackage('larakit.entity/entity-list.js')
-    //larakit
-    
+
 ;
