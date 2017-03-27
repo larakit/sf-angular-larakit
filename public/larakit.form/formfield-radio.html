@@ -1,8 +1,7 @@
 <div class="form-group" ng-class="{'has-error': $ctrl.error}">
-    <label class="control-label" ng-transclude></label>
+    <label class="control-label" ng-transclude></label><br>
     <div class="btn-group">
-        <label class="btn btn-primary" ng-model="$ctrl.model" uib-btn-radio="1" uib-uncheckable="uncheckable">Да</label>
-        <label class="btn btn-primary" ng-model="$ctrl.model" uib-btn-radio="0" uib-uncheckable="uncheckable">Нет</label>
+        <label class="btn btn-primary" ng-repeat="(k,v) in $ctrl.options" ng-model="$ctrl.model" uib-btn-radio="{{k}}" uib-uncheckable="uncheckable">{{v}}</label>
     </div>
     <span class="help-block" ng-bind="$ctrl.error" ng-show="$ctrl.error"></span>
     <span class="help-block" ng-bind="$ctrl.desc" ng-show="$ctrl.desc"></span>

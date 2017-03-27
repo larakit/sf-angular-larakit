@@ -1,12 +1,11 @@
 angular
     .module('larakit.form')
-    .component('formfieldRadio', {
-        templateUrl: '/packages/larakit/sf-angular-larakit/larakit.form/formfield-radio.html',
+    .component('formfieldCheckbox', {
+        templateUrl: '/packages/larakit/sf-angular-larakit/larakit.form/formfield-checkbox.html',
         transclude: true,
         bindings: {
             error: '=',
             desc: '=',
-            options: '=',
             label: '=',
             model: '='
         }
