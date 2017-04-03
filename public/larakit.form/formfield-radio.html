@@ -3,6 +3,6 @@
     <div class="btn-group">
         <label class="btn btn-primary" ng-repeat="(k,v) in $ctrl.options" ng-model="$ctrl.model" uib-btn-radio="{{k}}" uib-uncheckable="uncheckable">{{v}}</label>
     </div>
-    <span class="help-block" ng-bind="$ctrl.error" ng-show="$ctrl.error"></span>
-    <span class="help-block" ng-bind="$ctrl.desc" ng-show="$ctrl.desc"></span>
+    <span class="help-block" ng-bind-html="$ctrl.error" ng-show="$ctrl.error"></span>
+    <span class="help-block" ng-bind-html="$ctrl.desc" ng-show="$ctrl.desc"></span>
 </div>

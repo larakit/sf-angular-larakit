@@ -15,6 +15,6 @@
             <button type="button" class="btn btn-default" ng-click="$ctrl.opened=1"><i class="fa fa-calendar"></i></button>
         </span>
     </p>
-    <span class="help-block" ng-bind="$ctrl.error" ng-show="$ctrl.error"></span>
-    <span class="help-block" ng-bind="$ctrl.desc" ng-show="$ctrl.desc"></span>
+    <span class="help-block" ng-bind-html="$ctrl.error" ng-show="$ctrl.error"></span>
+    <span class="help-block" ng-bind-html="$ctrl.desc" ng-show="$ctrl.desc"></span>
 </div>
