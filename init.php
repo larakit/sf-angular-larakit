@@ -9,8 +9,6 @@
     ->usePackage('larakit/sf-bootstrap')
     ->usePackage('larakit/sf-toastrjs')
     ->setSourceDir('public')
-    //larakit.form
-    ->ngModule('larakit.form')
     ->jsPackage('larakit.form.js')
     ->jsPackage('larakit.form/formfield-textarea.js')
     ->jsPackage('larakit.form/formfield-text.js')
@@ -20,10 +18,8 @@
     ->jsPackage('larakit.form/formfield-date.js')
     ->jsPackage('larakit.form/formfield-icons.js')
     ->cssPackage('larakit.form/example.css')
-    //larakit.entity
-    ->ngModule('larakit.entity')
     ->jsPackage('larakit.entity.js')
     ->jsPackage('larakit.entity/entity-form.js')
     ->jsPackage('larakit.entity/entity-list.js')
-
+    ->jsPackage('larakit.js')
 ;
