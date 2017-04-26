@@ -16,18 +16,11 @@ angular
         },
         controller: function () {
             var self = this;
+            self.multiple = false;
             self.select_model = {id: 0};
-            self.select_model_multiple = [];
-            console.log('self.options', self.options);
             self.selected = function () {
                 self.model = self.select_model.id;
                 console.log(self.model, self.select_model.id);
-            };
-            self.selectedMultiple = function () {
-                self.model = [];
-                _.each(self.select_model_multiple, function (o) {
-                    self.model.push(o.id);
-                });
             };
 
             self.getLabel = function () {
@@ -43,9 +36,8 @@ angular
                 return '-';
             };
             self.$onInit = function () {
-                if (self.multiple) {
-                    self.select_model_multiple = self.model;
-                } else {
+                if (true != self.multiple) {
+                    self.multiple = false;
                     self.select_model.id = self.model;
                 }
             };

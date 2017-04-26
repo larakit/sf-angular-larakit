@@ -6,6 +6,8 @@
             <span ng-bind="item[$ctrl.optionKey]"></span>
         </ui-select-choices>
     </ui-select>
+
+
     <ui-select ng-if="!$ctrl.multiple" ng-model="$ctrl.select_model" on-select="$ctrl.selected()">
         <ui-select-match>
             <span ng-bind="$ctrl.getLabel()"></span>

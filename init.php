@@ -7,6 +7,8 @@
     ->usePackage('larakit/sf-angular-ui-bootstrap')
     ->usePackage('larakit/sf-angular-ui-tree')
     ->usePackage('larakit/sf-angular-ui-switch')
+    ->usePackage('larakit/sf-angular-ui-select')
+    ->usePackage('larakit/sf-angular-quilljs')
     ->usePackage('larakit/sf-bootstrap')
     ->usePackage('larakit/sf-toastrjs')
     ->setSourceDir('public')
