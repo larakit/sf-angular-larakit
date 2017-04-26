@@ -6,6 +6,7 @@ angular
 
         bindings: {
             error: '=',
+            multiple: '=',
             desc: '=',
             label: '=',
             options: '=',
@@ -16,10 +17,17 @@ angular
         controller: function () {
             var self = this;
             self.select_model = {id: 0};
-
+            self.select_model_multiple = [];
+            console.log('self.options', self.options);
             self.selected = function () {
                 self.model = self.select_model.id;
                 console.log(self.model, self.select_model.id);
+            };
+            self.selectedMultiple = function () {
+                self.model = [];
+                _.each(self.select_model_multiple, function (o) {
+                    self.model.push(o.id);
+                });
             };
 
             self.getLabel = function () {
@@ -35,7 +43,11 @@ angular
                 return '-';
             };
             self.$onInit = function () {
-                self.select_model.id = self.model;
+                if (self.multiple) {
+                    self.select_model_multiple = self.model;
+                } else {
+                    self.select_model.id = self.model;
+                }
             };
             self.groupBy = function (item) {
                 return _.get(item, self.groupField);
