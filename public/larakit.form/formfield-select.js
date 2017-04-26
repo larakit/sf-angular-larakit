@@ -6,7 +6,7 @@ angular
 
         bindings: {
             error: '=',
-            multiple: '=',
+            multiple: '=?',
             desc: '=',
             label: '=',
             options: '=',
