@@ -21,9 +21,10 @@
     ->jsPackage('larakit.form/formfield-date.js')
     ->jsPackage('larakit.form/formfield-icons.js')
     ->jsPackage('larakit.form/formfield-switch.js')
+    ->jsPackage('larakit.form/formfield-quill.js')
+    ->cssPackage('larakit.form/formfield-quill.css')
     ->cssPackage('larakit.form/example.css')
     ->jsPackage('larakit.entity.js')
     ->jsPackage('larakit.entity/entity-form.js')
     ->jsPackage('larakit.entity/entity-list.js')
-    ->jsPackage('larakit.js')
-;
+    ->jsPackage('larakit.js');

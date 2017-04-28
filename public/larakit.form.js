@@ -1,4 +1,8 @@
-angular.module('larakit.form', ['uiSwitch', 'ui.select']);
+angular.module('larakit.form', [
+    'uiSwitch',
+    'ui.select',
+    'ngQuill'
+]);
 
 angular.module('larakit.form')
     .filter('toDate', function () {
