@@ -1,0 +1,10 @@
+<div class="form-group" ng-class="{'has-error': $ctrl.error}">
+    <label class="control-label" ng-transclude></label>
+    <input type="number" class="form-control" ng-model="$ctrl.model">
+    <span class="help-block" ng-bind-html="$ctrl.error" ng-show="$ctrl.error"></span>
+    <span class="help-block" ng-bind-html="$ctrl.desc" ng-show="$ctrl.desc"></span>
+    <p class="example-block" rel="name-0" ng-show="$ctrl.preparedExamples.length>0">
+        Например:
+        <span ng-repeat="example in $ctrl.preparedExamples" ng-click="$ctrl.model = example.value" ng-bind="example.title"></span>
+    </p>
+</div>

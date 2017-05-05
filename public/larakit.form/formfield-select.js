@@ -16,7 +16,7 @@ angular
         },
         controller: function () {
             var self = this;
-            self.multiple = false;
+            self.multiple = !!self.multiple;
             self.select_model = {id: 0};
             self.selected = function () {
                 self.model = self.select_model.id;
