@@ -1,7 +1,7 @@
 angular
     .module('larakit.form')
     .component('formfieldQuill', {
-        templateUrl: '/packages/larakit/sf-angular-quilljs/larakit.form/formfield-quill.html',
+        templateUrl: '/packages/larakit/sf-angular-larakit/larakit.form/formfield-quill.html',
         transclude: true,
         bindings: {
             error: '=',
