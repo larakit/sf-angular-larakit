@@ -9,6 +9,7 @@
         "larakit/sf-angular-resource":"*",
         "larakit/sf-angular-ui-switch":"*",
         "larakit/sf-angular-hotkeys":"*",
+        "larakit/sf-angular-cookies":"*",
         "larakit/sf-angular-sanitize":"*",
         "larakit/sf-angular-ui-bootstrap":"*",
         "larakit/sf-angular-ui-tree":"*",

@@ -8,6 +8,8 @@
                 "ngSanitize",
                 "ngResource",
                 "ngRoute",
+                "ngCookies",
+                "cfp.hotkeys",
                 "larakit.form",
                 "larakit.entity"
             ]);

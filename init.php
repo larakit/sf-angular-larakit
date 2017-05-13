@@ -9,6 +9,8 @@
     ->usePackage('larakit/sf-angular-ui-switch')
     ->usePackage('larakit/sf-angular-ui-select')
     ->usePackage('larakit/sf-angular-quilljs')
+    ->usePackage('larakit/sf-angular-hotkeys')
+    ->usePackage('larakit/sf-angular-cookies')
     ->usePackage('larakit/sf-bootstrap')
     ->usePackage('larakit/sf-toastrjs')
     ->setSourceDir('public')
