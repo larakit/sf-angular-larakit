@@ -4,6 +4,7 @@
     "version": "1.5.9",
     "license": "MIT",
     "require":{
+        "larakit/sf-lodash.js": "*",
         "larakit/sf-angular-route":"*",
         "larakit/sf-toastrjs":"*",
         "larakit/sf-angular-resource":"*",
