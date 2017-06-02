@@ -15,6 +15,7 @@
         "larakit/sf-angular-ui-bootstrap":"*",
         "larakit/sf-angular-ui-tree":"*",
         "larakit/sf-angular-ui-select":"*",
+        "larakit/sf-angular-rzslider":"*",
         "larakit/sf-angular-quilljs":"*",
         "larakit/sf-angular-named-route":"*"
     },
