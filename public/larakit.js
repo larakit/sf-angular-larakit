@@ -9,6 +9,7 @@
                 "ngResource",
                 "ngRoute",
                 "ngCookies",
+                "rzModule",
                 "cfp.hotkeys",
                 "larakit.form",
                 "larakit.entity"
