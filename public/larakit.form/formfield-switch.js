@@ -10,11 +10,17 @@ angular
             switchInverse: '=?',
             switchClass: '=?',
             desc: '=',
+            change: '&?',
             label: '=',
             model: '='
         },
         controller: function () {
             var self = this;
+            self.onChange = function () {
+                if (self.change) {
+                    self.change();
+                }
+            };
             self.switchOn = (undefined == self.switchOn) ? 'Да' : self.switchOn;
             self.switchOff = (undefined == self.switchOff) ? 'Нет' : self.switchOff;
             self.switchClass = (undefined == self.switchClass) ? 'wide' : self.switchClass;

@@ -1,6 +1,6 @@
 <div class="form-group" ng-class="{'has-error': $ctrl.error}">
     <label class="control-label" ng-transclude></label>
-    <input type="text" class="form-control" ng-model="$ctrl.model">
+    <input type="text" class="form-control" ng-model="$ctrl.model" ng-change="$ctrl.onChange()" ng-model-options="{debounce: 200}">
     <span class="help-block" ng-bind="$ctrl.example" ng-click="$ctrl.applyExample()" ng-if="$ctrl.example"></span>
     <span class="help-block" ng-bind-html="$ctrl.error" ng-show="$ctrl.error"></span>
     <span class="help-block" ng-bind-html="$ctrl.desc" ng-show="$ctrl.desc"></span>

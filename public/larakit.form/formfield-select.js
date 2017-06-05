@@ -10,6 +10,7 @@ angular
             desc: '=',
             label: '=',
             options: '=',
+            change: '&?',
             groupField: '=',
             model: '=',
             optionKey: '='
@@ -18,6 +19,12 @@ angular
             var self = this;
             self.multiple = !!self.multiple;
             self.select_model = {id: 0};
+            self.onChange = function () {
+                if (self.change) {
+                    self.change()();
+                }
+            };
+
             self.selected = function () {
                 self.model = self.select_model.id;
                 console.log(self.model, self.select_model.id);
