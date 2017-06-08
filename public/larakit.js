@@ -10,7 +10,6 @@
                 "ngRoute",
                 "ngCookies",
                 "rzModule",
-                "yaMap",
                 "cfp.hotkeys",
                 "larakit.form",
                 "larakit.entity"
