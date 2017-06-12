@@ -6,13 +6,28 @@ angular
         bindings: {
             error: '=?',
             examples: '=?',
+            append: '=?',
+            prepend: '=?',
             desc: '=?',
             change: '&?',
-            model: '='
+            model: '=',
+            isExampleAppend: '=?'
         },
         controller: function () {
             var self = this;
             self.preparedExamples = [];
+            self.setExample = function (val) {
+                if (true == self.isExampleAppend) {
+                    if (undefined == self.model || 0 == self.model.length) {
+                        self.model = val;
+                    } else {
+                        self.model = self.model + ', ' + val;
+                    }
+                } else {
+                    self.model = val;
+                }
+
+            };
             self.onChange = function () {
                 if (self.change) {
                     self.change();

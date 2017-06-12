@@ -1,11 +1,18 @@
 <div class="form-group" ng-class="{'has-error': $ctrl.error}">
     <label class="control-label" ng-transclude></label>
-    <input type="text" class="form-control" ng-model="$ctrl.model" ng-change="$ctrl.onChange()" ng-model-options="{debounce: 200}">
+    <div class="input-group" ng-if="undefined!=$ctrl.append || undefined!=$ctrl.prepend">
+        <div ng-if="$ctrl.prepend" class="input-group-addon" ng-bind-html="$ctrl.prepend"></div>
+        <input type="text" class="form-control" ng-model="$ctrl.model" ng-change="$ctrl.onChange()" ng-model-options="{debounce: 200}">
+        <div ng-if="$ctrl.append" class="input-group-addon" ng-bind-html="$ctrl.append"></div>
+    </div>
+    <input  ng-if="!$ctrl.append && !$ctrl.prepend" type="text" class="form-control" ng-model="$ctrl.model" ng-change="$ctrl.onChange()" ng-model-options="{debounce: 200}">
+
+
     <span class="help-block" ng-bind="$ctrl.example" ng-click="$ctrl.applyExample()" ng-if="$ctrl.example"></span>
     <span class="help-block" ng-bind-html="$ctrl.error" ng-show="$ctrl.error"></span>
     <span class="help-block" ng-bind-html="$ctrl.desc" ng-show="$ctrl.desc"></span>
     <p class="example-block" rel="name-0" ng-show="$ctrl.preparedExamples.length>0">
         Например:
-        <span ng-repeat="example in $ctrl.preparedExamples" ng-click="$ctrl.model = example.value" ng-bind="example.title"></span>
+        <span ng-repeat="example in $ctrl.preparedExamples" ng-click="$ctrl.setExample(example.value)" ng-bind="example.title"></span>
     </p>
 </div>

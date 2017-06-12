@@ -7,12 +7,12 @@ angular
             error: '=',
             desc: '=',
             examples: '=',
-            frmLabel: '=',
-            max: '=',
-            min: '=',
+            frmLabel: '=?',
+            max: '=?',
+            min: '=?',
             model: '=',
-            theme: '=',
-            cssClass: '='
+            theme: '=?',
+            cssClass: '=?'
         },
         controller: function () {
             var self = this;
