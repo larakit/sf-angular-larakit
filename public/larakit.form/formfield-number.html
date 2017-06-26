@@ -1,5 +1,5 @@
 <div class="form-group" ng-class="{'has-error': $ctrl.error}">
-    <label ng-if="$ctrl.isLabel" class="control-label" ng-transclude></label>
+    <label class="control-label" ng-transclude></label>
     <div class="input-group" ng-if="$ctrl.append || $ctrl.prepend">
         <div ng-if="$ctrl.prepend" class="input-group-addon" ng-bind-html="$ctrl.prepend"></div>
         <input ng-if="1==$ctrl.getStep()"
@@ -36,6 +36,6 @@
     <span class="help-block" ng-bind-html="$ctrl.desc" ng-show="$ctrl.desc"></span>
     <p class="example-block" rel="name-0" ng-show="$ctrl.preparedExamples.length>0">
         Например:
-        <span ng-repeat="example in $ctrl.preparedExamples" ng-click="$ctrl.model = example.value" ng-bind="example.title"></span>
+        <span ng-repeat="example in $ctrl.preparedExamples" ng-click="$ctrl.setExample(example.value)" ng-bind="example.title"></span>
     </p>
 </div>

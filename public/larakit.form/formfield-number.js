@@ -15,22 +15,13 @@ angular
         },
         controller: function ($transclude) {
             var $ctrl = this;
-            $ctrl.isLabel = $transclude.isSlotFilled();
+            $ctrl.isLabel = $transclude.isSlotFilled(false);
             $ctrl.preparedExamples = [];
             $ctrl.getStep = function (va) {
                 return (undefined == $ctrl.step) ? 1 : 'any';
             };
             $ctrl.setExample = function (val) {
-                if (true == $ctrl.isExampleAppend) {
-                    if (undefined == $ctrl.model || 0 == $ctrl.model.length) {
-                        $ctrl.model = val;
-                    } else {
-                        $ctrl.model = $ctrl.model + ', ' + val;
-                    }
-                } else {
-                    $ctrl.model = val;
-                }
-
+                    $ctrl.model = parseFloat(val);
             };
             $ctrl.onChange = function () {
                 if ($ctrl.change) {

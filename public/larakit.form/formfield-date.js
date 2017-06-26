@@ -20,6 +20,11 @@ angular
                 minDate: (undefined!==self.min)?new Date(self.min):null,
                 startingDay: 1
             };
+            self.$postLink = function(){
+                console.log(self.model);
+                self.model = new Date(self.model);
+            };
+
             self.format = 'dd.MM.yyyy';
             self.clear = function(){
 

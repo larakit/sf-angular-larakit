@@ -10,6 +10,7 @@ angular
             label: '=',
             rows: '=',
             cols: '=',
+            isExampleAppend: '=?',
             model: '='
         },
         controller: function () {
@@ -23,5 +24,19 @@ angular
                     self.preparedExamples.push({value:value, title:title});
                 });
             }
+            self.setExample = function (val) {
+                console.log(self.isExampleAppend);
+                if (true == self.isExampleAppend) {
+                    if (undefined == self.model || 0 == self.model.length) {
+                        self.model = val;
+                    } else {
+                        self.model = self.model + ', ' + val;
+                    }
+                } else {
+                    self.model = val;
+                }
+
+            };
+
         }
     });
