@@ -27,7 +27,6 @@ angular
 
             self.selected = function () {
                 self.model = self.select_model.id;
-                console.log(self.model, self.select_model.id);
             };
 
             self.getLabel = function () {

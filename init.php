@@ -15,6 +15,7 @@
     ->usePackage('larakit/sf-toastrjs')
     ->setSourceDir('public')
     ->jsPackage('larakit.form.js')
+    ->jsPackage('larakit.form/form-examples.js')
     ->jsPackage('larakit.form/formfield-textarea.js')
     ->jsPackage('larakit.form/formfield-text.js')
     ->jsPackage('larakit.form/formfield-number.js')

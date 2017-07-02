@@ -21,8 +21,10 @@ angular
                     self.change();
                 }
             };
-            self.switchOn = (undefined == self.switchOn) ? 'Да' : self.switchOn;
-            self.switchOff = (undefined == self.switchOff) ? 'Нет' : self.switchOff;
-            self.switchClass = (undefined == self.switchClass) ? 'wide' : self.switchClass;
+            self.$onInit = function () {
+                self.switchOn = (undefined == self.switchOn) ? 'Да' : self.switchOn;
+                self.switchOff = (undefined == self.switchOff) ? 'Нет' : self.switchOff;
+                self.switchClass = (undefined == self.switchClass) ? 'wide' : self.switchClass;
+            };
         }
     });

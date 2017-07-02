@@ -34,8 +34,5 @@
            ng-model-options="{debounce: 200}">
     <span class="help-block" ng-bind-html="$ctrl.error" ng-show="$ctrl.error"></span>
     <span class="help-block" ng-bind-html="$ctrl.desc" ng-show="$ctrl.desc"></span>
-    <p class="example-block" rel="name-0" ng-show="$ctrl.preparedExamples.length>0">
-        Например:
-        <span ng-repeat="example in $ctrl.preparedExamples" ng-click="$ctrl.setExample(example.value)" ng-bind="example.title"></span>
-    </p>
+    <form-examples model="$ctrl.model" examples="$ctrl.examples" is-example-append="$ctrl.isExampleAppend"></form-examples>
 </div>

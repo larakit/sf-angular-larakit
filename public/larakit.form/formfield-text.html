@@ -5,14 +5,12 @@
         <input type="text" class="form-control" ng-model="$ctrl.model" ng-change="$ctrl.onChange()" ng-model-options="{debounce: 200}">
         <div ng-if="$ctrl.append" class="input-group-addon" ng-bind-html="$ctrl.append"></div>
     </div>
-    <input  ng-if="!$ctrl.append && !$ctrl.prepend" type="text" class="form-control" ng-model="$ctrl.model" ng-change="$ctrl.onChange()" ng-model-options="{debounce: 200}">
+    <input ng-if="!$ctrl.append && !$ctrl.prepend" type="text" class="form-control" ng-model="$ctrl.model" ng-change="$ctrl.onChange()"
+           ng-model-options="{debounce: 200}">
 
 
     <span class="help-block" ng-bind="$ctrl.example" ng-click="$ctrl.applyExample()" ng-if="$ctrl.example"></span>
     <span class="help-block" ng-bind-html="$ctrl.error" ng-show="$ctrl.error"></span>
     <span class="help-block" ng-bind-html="$ctrl.desc" ng-show="$ctrl.desc"></span>
-    <p class="example-block" rel="name-0" ng-show="$ctrl.preparedExamples.length>0">
-        Например:
-        <span ng-repeat="example in $ctrl.preparedExamples" ng-click="$ctrl.setExample(example.value)" ng-bind-html="example.title"></span>
-    </p>
+    <form-examples model="$ctrl.model" examples="$ctrl.examples" is-example-append="$ctrl.isExampleAppend"></form-examples>
 </div>
