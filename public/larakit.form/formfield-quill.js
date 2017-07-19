@@ -7,7 +7,7 @@ angular
             error: '=',
             desc: '=',
             examples: '=',
-            frmLabel: '=?',
+            label: '=?',
             max: '=?',
             min: '=?',
             model: '=',
