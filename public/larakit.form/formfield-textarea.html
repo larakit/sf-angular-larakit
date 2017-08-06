@@ -8,6 +8,7 @@
         <div ng-if="$ctrl.append" class="input-group-addon" ng-bind-html="$ctrl.append"></div>
     </div>
     <textarea type="text"
+              ng-if="!$ctrl.append && !$ctrl.prepend"
               ng-attr-rows="{{$ctrl.rows || '3'}}"
               class="form-control" ng-model="$ctrl.model"></textarea>
 
