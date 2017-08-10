@@ -6,6 +6,7 @@ angular
         bindings: {
             error: '=',
             model: '=',
+            labels: '=?',
             options: '=',
             w: '=?',
             h: '=?'

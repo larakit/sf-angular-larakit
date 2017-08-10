@@ -4,6 +4,7 @@
     <div class="btn-group">
         <button type="button"
                 style="color: #fff"
+                title="{{$ctrl.labels[code]}}"
                 class="btn btn-default" ng-class="{
                             'btn-active':code==$ctrl.model.svg
                             }" ng-model="$ctrl.model" uib-btn-radio="'{{code}}'" uncheckable
