@@ -12,6 +12,7 @@
         "larakit/sf-angular-hotkeys":"*",
         "larakit/sf-angular-cookies":"*",
         "larakit/sf-angular-sanitize":"*",
+        "larakit/sf-angular-color-picker":"*",
         "larakit/sf-angular-ui-bootstrap":"*",
         "larakit/sf-angular-ui-tree":"*",
         "larakit/sf-angular-ui-select":"*",
