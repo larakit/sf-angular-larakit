@@ -1,6 +1,7 @@
 angular.module('larakit.form', [
     'uiSwitch',
     'ui.select',
+    'color.picker',
     'ngQuill'
 ]);
 
