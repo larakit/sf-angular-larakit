@@ -21,6 +21,7 @@
     ->jsPackage('larakit.form/formfield-number.js')
     ->jsPackage('larakit.form/formfield-radio.js')
     ->jsPackage('larakit.form/formfield-select.js')
+    ->jsPackage('larakit.form/formfield-color.js')
     ->jsPackage('larakit.form/formfield-checkbox.js')
     ->jsPackage('larakit.form/formfield-date.js')
     ->jsPackage('larakit.form/formfield-icons.js')
