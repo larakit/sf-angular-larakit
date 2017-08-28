@@ -18,6 +18,7 @@
     ->jsPackage('larakit.form/form-examples.js')
     ->jsPackage('larakit.form/formfield-textarea.js')
     ->jsPackage('larakit.form/formfield-text.js')
+    ->jsPackage('larakit.form/formfield-priority.js')
     ->jsPackage('larakit.form/formfield-number.js')
     ->jsPackage('larakit.form/formfield-radio.js')
     ->jsPackage('larakit.form/formfield-select.js')

@@ -8,12 +8,11 @@ angular
             error: '=',
             multiple: '=?',
             desc: '=',
-            label: '=',
             options: '=',
             change: '&?',
             groupField: '=',
             model: '=',
-            optionKey: '='
+            optionKey: '=?'
         },
         controller: function () {
             var self = this;
@@ -45,6 +44,9 @@ angular
                 if (true != self.multiple) {
                     self.multiple = false;
                     self.select_model.id = self.model;
+                }
+                if(!self.optionKey){
+                    self.optionKey = 'toString';
                 }
             };
             self.groupBy = function (item) {
