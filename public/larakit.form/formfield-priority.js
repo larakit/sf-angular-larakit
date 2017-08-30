@@ -2,7 +2,6 @@ angular
     .module('larakit.form')
     .component('formfieldPriority', {
         templateUrl: '/packages/larakit/sf-angular-larakit/larakit.form/formfield-priority.html',
-        transclude: true,
         bindings: {
             error: '=?',
             examples: '=?',
@@ -12,17 +11,5 @@ angular
             step: '=?',
             change: '&?',
             model: '='
-        },
-        controller: function ($transclude) {
-            var $ctrl = this;
-            $ctrl.isLabel = $transclude.isSlotFilled(false);
-            $ctrl.getStep = function (va) {
-                return (undefined == $ctrl.step) ? 1 : 'any';
-            };
-            $ctrl.onChange = function () {
-                if ($ctrl.change) {
-                    $ctrl.change();
-                }
-            };
         }
     });
