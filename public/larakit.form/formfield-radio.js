@@ -5,6 +5,8 @@ angular
         transclude: true,
         bindings: {
             error: '=',
+            isVertical: '=?',
+            isFull: '=?',
             desc: '=',
             options: '=',
             label: '=',
