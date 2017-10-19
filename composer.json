@@ -4,21 +4,13 @@
     "version": "1.5.9",
     "license": "MIT",
     "require":{
-        "larakit/sf-lodash.js": "*",
-        "larakit/sf-angular-route":"*",
-        "larakit/sf-toastrjs":"*",
-        "larakit/sf-angular-resource":"*",
         "larakit/sf-angular-ui-switch":"*",
-        "larakit/sf-angular-hotkeys":"*",
-        "larakit/sf-angular-cookies":"*",
-        "larakit/sf-angular-sanitize":"*",
         "larakit/sf-angular-color-picker":"*",
         "larakit/sf-angular-ui-bootstrap":"*",
         "larakit/sf-angular-ui-tree":"*",
         "larakit/sf-angular-ui-select":"*",
         "larakit/sf-angular-rzslider":"*",
-        "larakit/sf-angular-quilljs":"*",
-        "larakit/sf-angular-named-route":"*"
+        "larakit/sf-angular-quilljs":"*"
     },
     "autoload": {
         "files": [
